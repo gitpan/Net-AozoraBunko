@@ -19,8 +19,10 @@ my $builder = Module::Build->new(
         'LWP::UserAgent' => 0,
         'Encode'         => 0,
         'Web::Scraper'   => 0,
+        'Getopt::Compact::WithCmd' => 0.13,
     },
     add_to_cleanup      => [ 'Net-AozoraBunko-*' ],
+    script_files        => [ 'bin/aozora' ],
     meta_merge     => {
       resources => {
         repository  => 'http://github.com/bayashi/Net-AozoraBunko'

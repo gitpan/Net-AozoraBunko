@@ -1,3 +1,4 @@
+bin/aozora
 Build.PL
 Changes
 lib/Net/AozoraBunko.pm

@@ -17,10 +17,11 @@ name: Net-AozoraBunko
 provides:
   Net::AozoraBunko:
     file: lib/Net/AozoraBunko.pm
-    version: v0.0.1
+    version: 0.02
 requires:
   Carp: 0
   Encode: 0
+  Getopt::Compact::WithCmd: 0.13
   LWP::UserAgent: 0
   URI: 0
   URI::Fetch: 0
@@ -28,4 +29,4 @@ requires:
 resources:
   license: http://dev.perl.org/licenses/
   repository: http://github.com/bayashi/Net-AozoraBunko
-version: v0.0.1
+version: 0.02
