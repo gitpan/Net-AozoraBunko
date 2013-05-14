@@ -10,7 +10,7 @@ use LWP::UserAgent;
 use Encode qw/decode/;
 use Web::Scraper;
 
-our $VERSION = '0.02';
+our $VERSION = '0.04';
 
 my $DOMAIN = 'http://www.aozora.gr.jp';
 my $PAGES = {
@@ -21,7 +21,7 @@ my $PAGES = {
 };
 
 my $ENCODE = {
-    html => 'euc-jp',
+    html => 'utf8',
     text => 'cp932',
 };
 
@@ -363,6 +363,10 @@ search authors by a keyword
   my $search_work_results   = $ab->search_work($author->{url}, 'search_word');
 
 search works by a keyword from authors page.
+
+=item ua
+
+get/set user agent object
 
 =back
 

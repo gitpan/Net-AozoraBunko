@@ -1,5 +1,5 @@
 ---
-abstract: 'Perl Interface for accessing 青空文庫'
+abstract: 'Perl Interface for accessing éç©ºæåº«'
 author:
   - 'Dai Okabayashi <bayashi@cpan.org>'
 build_requires:
@@ -7,8 +7,9 @@ build_requires:
   Test::More: 0.88
   YAML: 0
 configure_requires:
-  Module::Build: 0.36
-generated_by: 'Module::Build version 0.3607'
+  Module::Build: 0.38
+dynamic_config: 1
+generated_by: 'Module::Build version 0.4003, CPAN::Meta::Converter version 2.112150'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -17,7 +18,7 @@ name: Net-AozoraBunko
 provides:
   Net::AozoraBunko:
     file: lib/Net/AozoraBunko.pm
-    version: 0.02
+    version: 0.04
 requires:
   Carp: 0
   Encode: 0
@@ -26,7 +27,8 @@ requires:
   URI: 0
   URI::Fetch: 0
   Web::Scraper: 0
+  perl: v5.8.8
 resources:
   license: http://dev.perl.org/licenses/
   repository: http://github.com/bayashi/Net-AozoraBunko
-version: 0.02
+version: 0.04
