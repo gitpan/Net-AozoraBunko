@@ -9,7 +9,7 @@ build_requires:
 configure_requires:
   Module::Build: 0.38
 dynamic_config: 1
-generated_by: 'Module::Build version 0.4003, CPAN::Meta::Converter version 2.112150'
+generated_by: 'Module::Build version 0.4005, CPAN::Meta::Converter version 2.130880'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -18,11 +18,13 @@ name: Net-AozoraBunko
 provides:
   Net::AozoraBunko:
     file: lib/Net/AozoraBunko.pm
-    version: 0.04
+    version: 0.05
 requires:
   Carp: 0
   Encode: 0
   Getopt::Compact::WithCmd: 0.13
+  IO::String: 0
+  IO::Uncompress::Unzip: 0
   LWP::UserAgent: 0
   URI: 0
   URI::Fetch: 0
@@ -31,4 +33,4 @@ requires:
 resources:
   license: http://dev.perl.org/licenses/
   repository: http://github.com/bayashi/Net-AozoraBunko
-version: 0.04
+version: 0.05
